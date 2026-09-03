@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111111">
+
+    <title>LogiGamer 2.0</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">LogiGamer 2.0</div>
+
+    <nav>
+
+        <a href="#home">Головна</a>
+
+        <div class="catalog-wrapper">
+
+    <button
+        class="catalog-btn"
+        id="catalogBtn"
+        type="button"
+    >
+        Каталог ▾
+    </button>
+
+    <div
+        class="catalog-menu"
+        id="catalogMenu"
+    >
+
+        <a href="https://xboxchik.github.io/LG2/">
+            🎮 Всі ігри
+        </a>
+
+        <a href="https://xboxchik.github.io/LG2ekshn/">
+            ⚔️ Екшн
+        </a>
+
+        <a href="https://xboxchik.github.io/LG2rpg/">
+            🧙 RPG
+        </a>
+
+        <a href="https://xboxchik.github.io/LG2strategi/">
+            ♟️ Стратегії
+        </a>
+
+        <a href="https://xboxchik.github.io/LG2simulator/">
+            🚗 Симулятори
+        </a>
+
+        <a href="https://xboxchik.github.io/LG2prugody/">
+            🗺️ Пригоди
+        </a>
+
+        <a href="https://xboxchik.github.io/LG2arcade/">
+            👾 Аркади
+        </a>
+
+        <a href="https://xboxchik.github.io/LG2golova/">
+            🧩 Головоломки
+        </a>
+
+    </div>
+
+</div>
+
+       
+
+        <a href="#games">Ігри</a>
+
+        <a
+            href="https://t.me/LogiGamerbot"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Допомога
+        </a>
+
+        <button
+            class="cart-btn"
+            id="cartBtn"
+            type="button"
+        >
+            🛒 Кошик
+            <span id="cartCount">0</span>
+        </button>
+
+    </nav>
+</header>
+
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>LogiGamer 2.0</h1>
+
+        <p>
+            LogiGamer 2.0 — нова версія сайту.
+            Тут ти знайдеш багато нових функцій та ігор.
+        </p>
+
+        <button
+            class="hero-button"
+            id="letsGo"
+            type="button"
+        >
+            Давай створимо тобі нову версію геймінгу!
+        </button>
+
+    </div>
+
+</section>
+
+
+<section class="search-section">
+
+    <h2>Знайти екшн гру</h2>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Введи назву екшн гри..."
+            autocomplete="off"
+        >
+
+    </div>
+
+</section>
+
+
+<section class="products" id="games">
+
+    <div class="section-title">
+
+        <h2>Каталог екшн ігор</h2>
+
+        <div id="categoryTitle">
+            
+        </div>
+
+    </div>
+
+
+    <div class="grid" id="gamesGrid">
+
+
+        <div class="card" data-name="Cyberpunk 2077" data-category="ekshn">
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/e9047d8ec47ae3d94bb8b464fb0fc9e9972b4ac7/header.jpg?t=1769690377" alt="Cyberpunk 2077">
+            <div class="card-content">
+                <span class="category">Екшн</span>
+                <h3>Cyberpunk 2077</h3>
+                <p class="game-description">Футуристична RPG у величезному Найт-Сіті, де можна досліджувати місто, виконувати завдання та робити важливі вибори.</p>
+                <div class="price">1399₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="Cyberpunk 2077" data-price="1399">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://store.steampowered.com/agecheck/app/1091500/?l=ukrainian" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 2 -->
+        <div class="card" data-name="DOOM Eternal" data-category="ekshn">
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/782330/header.jpg?t=1755109910" alt="DOOM Eternal">
+
+            <div class="card-content">
+                <span class="category">Екшн</span>
+                <h3>DOOM Eternal</h3>
+                <p class="game-description">Швидкий шутер від першої особи, де Палач Рока бореться з демонами за допомогою великого арсеналу.</p>
+                <div class="price">649₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="DOOM Eternal" data-price="649">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://store.steampowered.com/agecheck/app/782330/?l=ukrainian" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 3 -->
+        <div class="card" data-name="Hades II" data-category="ekshn">
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/91ac334a2c137d08968ccc0bc474a02579602100/header.jpg?t=1779901265" alt="Hades II">
+
+            <div class="card-content">
+                <span class="category">Екшн</span>
+                <h3>Hades II</h3>
+                <p class="game-description">Динамічний roguelike-екшн про Меліною, яка бореться проти сил Титана Хроноса.</p>
+                <div class="price">460₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="Hades II" data-price="460">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://store.steampowered.com/agecheck/app/1145350/?l=ukrainian" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 4 -->
+        <div class="card" data-name="Black Myth: Wukong" data-category="ekshn">
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/header.jpg?t=1760601605" alt="Black Myth: Wukong">
+
+            <div class="card-content">
+                <span class="category">Екшн</span>
+                <h3>Black Myth: Wukong</h3>
+                <p class="game-description">Фентезійний екшен за мотивами китайської міфології з дослідженням світу та складними боями.</p>
+                <div class="price">1699₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="Black Myth: Wukong" data-price="1699">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://store.steampowered.com/agecheck/app/2358720/?l=ukrainian" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 5 -->
+        <div class="card" data-name="Genshin Impact" data-category="ekshn">
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/200260/header.jpg?t=1745964057" alt="Batman: Arkham City">
+
+            <div class="card-content">
+                <span class="category">Екшн</span>
+                <h3>Batman: Arkham City</h3>
+                <p class="game-description">Пригодницький екшен про Бетмена, який бореться зі злочинцями та розкриває змову в Аркхем-Сіті.</p>
+                <div class="price">279₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="Batman: Arkham City" data-price="279">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://store.steampowered.com/app/200260/Batman_Arkham_City__Game_of_the_Year_Edition/?l=ukrainian" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 6 -->
+        <div class="card" data-name="Devil May Cry 5" data-category="ekshn">
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/601150/header.jpg?t=1768869803" alt="Devil May Cry 5">
+
+            <div class="card-content">
+                <span class="category">Екшн</span>
+                <h3>Devil May Cry 5</h3>
+                <p class="game-description">Стильний екшен із швидкими боями, комбо та кількома героями з унікальними бойовими стилями.</p>
+                <div class="price">949₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="Devil May Cry 5" data-price="949">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://store.steampowered.com/agecheck/app/601150/?l=ukrainian" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 7 -->
+        <div class="card" data-name="Returnal" data-category="ekshn">
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1649240/header.jpg?t=1750956860" alt="Returnal">
+
+            <div class="card-content">
+                <span class="category">Екшн</span>
+                <h3>Returnal</h3>
+                <p class="game-description">Науково-фантастичний roguelike-шутер, де героїня потрапляє у загадковий цикл на чужій планеті.</p>
+                <div class="price">1699₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="Returnal" data-price="1699">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://store.steampowered.com/agecheck/app/1649240/?l=ukrainian" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 8 -->
+        <div class="card" data-name="Middle-earth: Shadow of Mordor" data-category="ekshn">
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/241930/header_russian.jpg?t=1757538323" alt="Middle-earth: Shadow of Mordor">
+
+            <div class="card-content">
+                <span class="category">Екшн</span>
+                <h3>Middle-earth: Shadow of Mordor</h3>
+                <p class="game-description">Екшен у світі Середзем’я з відкритими територіями, боями та системою ворогів, які запам’ятовують героя.</p>
+                <div class="price">549₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="Middle-earth: Shadow of Mordor" data-price="549">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://store.steampowered.com/app/241930/Middleearth_Shadow_of_Mordor/" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 9 -->
+        <div class="card" data-name="Mafia: Definitive Edition" data-category="ekshn">
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030840/header.jpg?t=1779310017" alt="Mafia: Definitive Edition">
+
+            <div class="card-content">
+                <span class="category">Екшн</span>
+                <h3>Mafia: Definitive Edition</h3>
+                <p class="game-description">Сюжетний кримінальний екшен про життя Томмі Анджело та мафіозний світ 1930-х років.</p>
+                <div class="price">749₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="Mafia: Definitive Edition" data-price="749">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://store.steampowered.com/agecheck/app/1030840/?l=ukrainian" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 10 -->
+        <div class="card" data-name="God of War Ragnarök" data-category="ekshn">
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2322010/header.jpg?t=1776465233" alt="God of War Ragnarök">
+
+            <div class="card-content">
+                <span class="category">Екшн</span>
+                <h3>God of War Ragnarök</h3>
+                <p class="game-description">Епічна пригода Кратоса та Атрея, які вирушають у подорож крізь скандинавські світи.</p>
+                <div class="price">1699₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="God of War Ragnarök" data-price="1699">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://store.steampowered.com/app/2322010/God_of_War_Ragnark/?l=ukrainian" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 11 -->
+        <div class="card" data-name="Ghost of Tsushima" data-category="ekshn">
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215430/header.jpg?t=1763409398" alt="Ghost of Tsushima">
+
+            <div class="card-content">
+                <span class="category">Екшн</span>
+                <h3>Ghost of Tsushima</h3>
+                <p class="game-description">Відкритий світ самурайської Японії, де Дзюн бореться за свій острів і опановує шлях воїна.</p>
+                <div class="price">1699₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="Ghost of Tsushima" data-price="1699">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://store.steampowered.com/agecheck/app/1245620/?l=ukrainian" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 12 -->
+        <div class="card" data-name="GTA V" data-category="ekshn">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsP-7zSgpUai-ujyWobWi_zFYq12Nz8Cr6NKrb24mhedx2qxsObGU3VUg&s=10" alt="GTA V">
+
+            <div class="card-content">
+                <span class="category">Екшн</span>
+                <h3>GTA V</h3>
+                <p class="game-description">Великий відкритий світ із трьома головними героями, кримінальними пригодами та різноманітними активностями.</p>
+                <div class="price">1999₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="GTA V" data-price="1999">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://store.steampowered.com/app/200260/GTA_V/" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 13 -->
+        <div class="card" data-name="GTA VI" data-category="ekshn">
+            <img src="https://content2.rozetka.com.ua/goods/images/big/509265220.png" alt="GTA VI">
+
+            <div class="card-content">
+                <span class="category">Екшн</span>
+                <h3>GTA VI</h3>
+                <p class="game-description">Майбутня кримінальна пригода Rockstar у штаті Леоніда з новими героями та великим відкритим світом.</p>
+                <div class="price">4299₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="GTA VI" data-price="4299">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://itorrents-igruha.org/83-gta-6.html" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 14 -->
+        <div class="card" data-name="Grand Theft Auto IV: The Complete Edition" data-category="ekshn">
+            <img src="https://content2.rozetka.com.ua/goods/images/big/45236655.jpg" alt="Grand Theft Auto IV: The Complete Edition">
+
+            <div class="card-content">
+                <span class="category">Екшн</span>
+                <h3>Grand Theft Auto IV: The Complete Edition</h3>
+                <p class="game-description">Кримінальна пригода Ніко Белліка в Ліберті-Сіті з відкритим світом і насиченою історією.</p>
+                <div class="price">429₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="Grand Theft Auto IV: The Complete Edition" data-price="429">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://store.steampowered.com/app/12210/Grand_Theft_Auto_IV_The_Complete_Edition/?l=ukrainian" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 15 -->
+        <div class="card" data-name="Control Ultimate Edition" data-category="ekshn">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/870780/ec621653454cdad232187af4eb79f23c05aceca5/header.jpg?t=1781607969" alt="Control Ultimate Edition">
+
+            <div class="card-content">
+                <span class="category">Екшн</span>
+                <h3>Control Ultimate Edition</h3>
+                <p class="game-description">Містичний екшен про Джессі Фейден, яка досліджує загадкову будівлю та надприродні явища.</p>
+                <div class="price">675₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="Control Ultimate Edition" data-price="675">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://store.steampowered.com/app/870780/CONTROL_Ultimate_Edition/?l=ukrainian" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 16 -->
+        <div class="card" data-name="Metro Exodus" data-category="ekshn">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/412020/header.jpg?t=1750772804" alt="Metro Exodus">
+
+            <div class="card-content">
+                <span class="category">Екшн</span>
+                <h3>Metro Exodus</h3>
+                <p class="game-description">Постапокаліптичний шутер із подорожжю через різні регіони Росії, дослідженням і виживанням.</p>
+                <div class="price">799₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="Metro Exodus" data-price="799">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://store.steampowered.com/app/412020/Metro_Exodus/?l=ukrainian" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 17 -->
+        <div class="card" data-name="Sekiro: Shadows Die Twice - GOTY Edition" data-category="ekshn">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/814380/header.jpg?t=1762888662" alt="Sekiro: Shadows Die Twice - GOTY Edition">
+
+            <div class="card-content">
+                <span class="category">Екшн</span>
+                <h3>Sekiro: Shadows Die Twice - GOTY Edition</h3>
+                <p class="game-description">Складний екшен від третьої особи про шинобі, який використовує меч, гак і особливі здібності.</p>
+                <div class="price">2035₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="Sekiro: Shadows Die Twice - GOTY Edition" data-price="2035">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://store.steampowered.com/app/2322010/Sekiro_Shadows_Die_Twice_GOTY_Edition/" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 18 -->
+        <div class="card" data-name="Metal Gear Solid V: The Phantom Pain " data-category="ekshn">
+            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202010/0205/dyvo9eGUf7WTZx49eTpQyDuL.png" alt="Metal Gear Solid V: The Phantom Pain ">
+
+            <div class="card-content">
+                <span class="category">Екшн</span>
+                <h3>Metal Gear Solid V: The Phantom Pain</h3>
+                <p class="game-description">Тактичний стелс-екшен із великим відкритим світом, базою та великою свободою виконання місій.</p>
+                <div class="price">949₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="Metal Gear Solid V: The Phantom Pain " data-price="949">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://store.steampowered.com/app/1245620/ELDEN_RING/" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 19 -->
+        <div class="card" data-name="RoboCop: Rogue City" data-category="ekshn">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1681430/header.jpg?t=1778174302" alt="RoboCop: Rogue City">
+
+            <div class="card-content">
+                <span class="category">Екшн</span>
+                <h3>RoboCop: Rogue City</h3>
+                <p class="game-description">Екшен за мотивами RoboCop, де герой патрулює Детройт, розслідує злочини та бореться зі злочинцями.</p>
+                <div class="price">820₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="RoboCop: Rogue City" data-price="820">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://store.steampowered.com/app/1681430/RoboCop_Rogue_City/" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 20 -->
+        <div class="card" data-name="Horizon Forbidden West" data-category="ekshn">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2420110/header.jpg?t=1776465869" alt="Horizon Forbidden West">
+
+            <div class="card-content">
+                <span class="category">екшн</span>
+                <h3>Horizon Forbidden West</h3>
+                <p class="game-description">Пригодницький екшен у постапокаліптичному світі, де Елой досліджує нові землі та бореться з машинами.</p>
+                <div class="price">499₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart" data-name="Horizon Forbidden West" data-price="499">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download" href="https://store.steampowered.com/app/2420110/_Povne_vidannya_Horizon_Forbidden_West/?l=ukrainian" target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+       
+
+
+</section>
+
+
+<!-- CART -->
+
+<div
+    class="overlay"
+    id="cartOverlay"
+>
+
+    <aside class="cart">
+
+        <button
+            class="close"
+            id="closeCart"
+            type="button"
+        >
+            ✕
+        </button>
+
+        <h2>🛒 Кошик</h2>
+
+        <div id="cartItems">
+            <p class="empty-cart">
+                🛒 Кошик порожній
+            </p>
+        </div>
+
+        <div class="cart-bottom">
+
+            <div class="total">
+                <span>Разом:</span>
+
+                <strong id="cartTotal">
+                    0₴
+                </strong>
+            </div>
+
+            <button
+                class="clear-cart"
+                id="clearCart"
+                type="button"
+            >
+                Очистити кошик
+            </button>
+
+            <button
+                class="checkout"
+                id="checkout"
+                type="button"
+            >
+                Оформити замовлення
+            </button>
+
+        </div>
+
+    </aside>
+
+</div>
+
+
+<footer>
+    © 2026 LogiGamer — Усі права захищені
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
